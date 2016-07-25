@@ -1,0 +1,39 @@
+{
+
+	"name":"New Tab Weekplan",
+	"version": "0.1",
+	"manifest_version":2,
+	"description": "Bookmark Weekly Plans Reveal",
+	"icons": {
+	"64":"logo.png",
+	"32":"logo.png",
+	"16":"logo.png"
+	},
+ "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*","https://api.weekplan.net/*","https://mail.google.com/*"],
+      "exclude_matches":["https://app.weekplan.net/*"],
+      "css": [],
+      "js": [
+      "contentscript.js"]
+    }
+  ],
+  "chrome_url_overrides":{
+    "newtab": "index.html"
+  }
+  ,
+
+   "background": {
+    "scripts": ["background.js"]
+  }, "permissions": [
+          "storage",
+          "tabs",
+    "https://mail.google.com/*"
+        ],
+ "web_accessible_resources":[
+   
+
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+
+}

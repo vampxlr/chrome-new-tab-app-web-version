@@ -1,0 +1,17 @@
+
+
+#login-view
+{
+
+	    position: relative;
+    top: 50%;
+    transform: translateY(-50%); /* or try 50% */
+    margin: 0 auto;
+}
+
+#login-title-container{
+background-color: #259af4;
+	font-weight:300;
+text-transform:uppercase;
+
+}

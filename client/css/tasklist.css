@@ -1,0 +1,73 @@
+
+.demo-card-wide.mdl-card {
+  width: 596px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 60px;
+  background-color:#4A4747;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+#task-list-view{
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); /* or try 50% */
+  
+}
+
+#task-list-table{
+    width: 542px;
+
+}
+
+#task-list-table th,#task-list-table td{
+
+    text-align: center;
+}
+
+
+#task-list-table .icons-container{
+text-align: center;
+cursor:pointer;
+}
+
+#task-list-table .icons-container:hover{
+background-color:#C8C8C8;
+}
+
+#task-list-title{
+font-weight:300;
+text-transform:uppercase;
+
+}
+
+#settings-list-drawer{
+font-weight:300;
+text-transform:uppercase;
+}
+
+#task-list-table-container-master{
+    height:200px;overflow-y:scroll; width:100%;overflow-x: hidden;
+}
+
+#add-task-input-container{
+    width:100%;
+}

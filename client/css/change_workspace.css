@@ -1,0 +1,29 @@
+
+
+#change-workspace-view
+{
+min-height: 20px;
+	    position: relative;
+    top: 50%;
+    transform: translateY(-50%); /* or try 50% */
+    margin: 0 auto;
+}
+
+.Root_Main_changeWorkspaceTitleContainer{
+background-color: #259af4;
+
+	font-weight:300;
+text-transform:uppercase;
+
+}
+
+#workspace{
+    font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.change-work-space-body{
+    height: 60px;
+}

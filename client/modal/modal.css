@@ -1,0 +1,107 @@
+/* The Modal (background) */
+@keyframes fadeinelements {
+    from { opacity: 0;display:block; }
+    to   { opacity: 1;display:block; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinelements {
+    from { opacity: 0;display:block;}
+    to   { opacity: 1; display:block;}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinelements {
+    from { opacity: 0;display:block;}
+    to   { opacity: 1;display:block; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinelements {
+    from { opacity: 0;display:block; }
+    to   { opacity: 1; display:block;}
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinelements {
+    from { opacity: 0;display:block;}
+    to   { opacity: 1; display:block; }
+}
+
+
+
+@keyframes hide {
+    0% {
+        display: block;
+        opacity: 1;
+    }
+    99% {
+        display: block;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+.hide{
+    animation: hide 500ms ease-out;
+    animation-fill-mode: forwards;
+}
+
+.hidden{
+    display:none;
+}
+
+
+.modal {
+
+
+
+
+
+    @display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index:3; /* Sit on top */
+ 
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+/* Modal Content */
+.modal-content {
+
+    background-color: transparent;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+   
+}
+
+.close:hover,
+.close:focus {
+  
+}
+
+.show{
+
+    animation: fadeinelements 0.5;    transition: opacity 1s ease-out;
+
+
+    -webkit-animation: fadeinelements 0.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeinelements 0.5s; /* Firefox < 16 */
+    -ms-animation: fadeinelements 0.5s; /* Internet Explorer */
+    -o-animation: fadeinelements 0.5s; /* Opera < 12.1 */
+    animation: fadeinelements 0.5s;
+
+
+}

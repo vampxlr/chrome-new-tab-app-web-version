@@ -1,0 +1,91 @@
+
+<script src="popup/material.js"></script>
+
+<link rel="stylesheet" href="popup/material.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+
+<!-- Wide card with share menu button -->
+<style>
+    .demo-card-wide.mdl-card {
+        width: 500px;
+    }
+
+    .demo-card-wide > .mdl-card__title {
+        color: #fff;
+        height: 60px;
+        background-color: #4A4747;
+    }
+
+    .demo-card-wide > .mdl-card__menu {
+        color: #fff;
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    }
+</style>
+<!-- start of task-list-view -->
+<div id="task-list-view" class="demo-card-wide mdl-card mdl-shadow--2dp">
+    <!-- !!start!! of task-list-view -->
+    <div id="task-list-card-title" class="mdl-card__title ">
+        <h2 class="mdl-card__title-text ">Task List (2)</h2>
+    </div><!-- @@end@@ of task-list-view -->
+    <!-- !!start!! of task-list-table-container-master -->
+    <div id="task-list-table-container-master" style="height:200px;overflow-y:scroll; width:100%;overflow-x: hidden;">
+        <!-- !!start!! of task-list-table-container -->
+        <div id="task-list-table-container" class="mdl-card__supporting-text">
+            <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                <thead>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Task</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+
+                    </tr>
+              
+                  
+
+                </tbody>
+            </table>
+        </div><!-- @@end@@ of task-list-table-container -->
+
+    </div><!-- @@end@@ of task-list-table-container-master -->
+    <!-- !!start!! of add-task-container -->
+    <div id="add-task-container" class="mdl-card__actions mdl-card--border">
+        <!-- !!start!! of add-task-input-container -->
+        <div id="add-task-input-container" class="mdl-textfield mdl-js-textfield" style="width:100%;">
+            <input class="mdl-textfield__input" type="text" id="addtask">
+            <label class="mdl-textfield__label" for="addtask">New Task</label>
+        </div><!-- @@end@@ of add-task-input-container -->
+
+    </div><!-- @@end@@ of add-task-container -->
+    <div id="top-button-container" class="mdl-card__menu"> <!-- !!start!! of top-button-container -->
+        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+            <i class="material-icons">delete</i>
+        </button>
+        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+            <i class="material-icons">clear</i>
+        </button>
+    </div>  <!-- @@end@@ of top-button-container -->
+</div>
+<!-- @@end@@ of task-list-view -->
